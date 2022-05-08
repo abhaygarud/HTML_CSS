@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: black;
+    }
+    .a{
+        color:white;
+        background-color: tomato;
+        width: 25%;
+        height: 25%;
+        position:relative;
+        animation-name: abhay;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: 1s;
+        animation-delay: 3s; 
+        /* animation-direction: reverse;is reverse the animation    */
+    }
+    @keyframes abhay {
+        from{
+            left:0px
+
+        }
+        to{
+            left:100px;
+
+        }
+        
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h1 class="a">this is a heading</h1>
+    </div>
+    
+</body>
+</html>

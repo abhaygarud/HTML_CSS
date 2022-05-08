@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        .container{
+            border:2px solid black;
+            color:rgb(0, 2, 3);
+            display:flex;
+            height: 400px;
+            /* flex-direction: row; intiliaze the block intilally row wise; */
+            /* flex-wrap:wrap; default value is no-wrap
+            intiliaze the flex direction block as per the screen size */
+            
+            
+            /* flex-wrap:wrap; */
+            /* flex-flow: row-reverse wrap; can do both the operation of flex direction and wrap */
+
+
+            /* justify-content: left; brong the elemt at the left og the container */
+            /* justify-content: center; it justify tje blokc in center itself */
+            /* justify-content: space-evenly;  */
+            /* justify-content: space-between; it create the space between the block */
+            /* justify-content: space-around; it create a commen space all side */
+            /* justify-content: space-between; */
+
+            /* align-items:center; */
+
+
+            /* align-items: flex-start; */
+            flex-direction: row;
+               }
+
+
+               
+        .item{
+            border:2px solid green;
+           background-color: orange;
+            margin:60px;
+            padding:39px;
+            width:100px;
+            height:100px;
+            
+        }
+        /* #item1{
+            /* flex-grow: 2; it will grow the first blokv as the screen increase */
+            /* flex-shrink: 2; */
+            /* flex-basis: 160px;if dieextion row wise then it will be width  if coloum then height*/
+            /* flex:grow srink basis: */
+            /* flex:2 2 120px; */
+
+
+            /* align-self: flex-start; */
+            /* align-self:flex-end; */
+            /* align-self:center; */
+
+
+      
+
+    </style>
+</head>
+<body>
+    <h1>this are the flex code</h1>
+    <div class="container">
+        <div class="item" id="item1">first</div>
+        <div class="item" id="item2">second</div>
+        <div class="item" id="item3">third </div>
+        <!-- <div class="item" id="item4">fourth</div>
+        <div class="item" id="item5">fifth</div>
+        <div class="item" id="item6">sixth</div> -->
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set time out</title>
+</head>
+<style>
+    #container{
+        border: 2px solid black;
+        background-color: red;
+        color: white;
+        margin: 300px;
+        padding:20px;
+        border-radius: 300px;
+        text-align: center;
+
+
+    }
+    #time{
+        font-weight: bold;
+    }
+
+</style>
+<body>
+    <div id="container">
+        Time is<span id="time"></span>
+    </div>
+    <script>
+    //     console.log("hello abhay this is setime out tutorial");
+
+    //     function greet(name)
+    //     {
+    //         console.log("hello goodmorning"+name)
+    //     };
+    //     setTimeout(greet,5000,"computer");
+        
+    //  function displaytime(){
+    //      time = new Date();
+    //      console.log(time);
+    //      document.getElementById('time').innerHTML=time
+    //  }
+    //  setInterval(displaytime(), 5000)
+
+    //  let newdate=new Date(2021,1,12,10,36,10,34);
+    //  console.log(newdate);
+
+    //  let year = newdate.getFullYear();
+    //  console.log("The year is", year);
+
+    //  let month = newdate.getMonth();
+    //  console.log("The month is", month);
+
+    //  let day = newdate.getDate();
+    //  console.log("The day is", day);
+     setInterval(updatetime,1000);
+     
+     function updatetime(){
+         time.innerHTML=new Date()
+     }
+        
+    </script>
+    
+</body>
+</html>

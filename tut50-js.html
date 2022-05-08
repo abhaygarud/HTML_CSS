@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script string</title>
+</head>
+<body>
+    <script>
+        var str="abhayis is a good boy";
+        console.log(str);
+        var position =str.indexOf('is');
+        console.log(position)
+
+        var position=str.lastIndexOf('is');
+        console.log(position)
+
+        // substring from a string\
+
+        // method1
+        substring1=str.slice(1,4);
+        console.log(substring1)
+        // method2
+        substring1=str.substring(1,4);
+        console.log(substring1)
+        
+        // method3
+        substring1=str.substr(1,4);
+        console.log(substring1)
+
+
+        // to replaced the string
+
+        var replacedd =str.replace('abhay' ,'sakshi');
+        console.log(replacedd)
+        var replacedd =str.replace('boy','girl');
+        console.log(replacedd)
+
+        // uper and lowe case
+
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+
+    </script>
+    
+</body>
+</html>

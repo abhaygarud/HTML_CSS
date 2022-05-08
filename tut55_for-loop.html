@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop foreach for()</title>
+</head>
+<body>
+    <script>
+        arr_friend=['abhay','sakshi','aniket','aju']
+
+        // for(index=0;index<arr_friend.length;index++){
+        //     console.log("helLO "+arr_friend[index] +" how are you")
+        // }
+
+        // arr_friend.forEach(function f(element) {
+        //     console.log("helLO "+element +" how are you here")
+            
+        // });
+        // for(element of arr_friend ){
+        //     console.log("helLO "+ element +" how are you again")
+        // }
+        let employee = {
+        name: "abhay",
+        salary: 2,
+        channel: "smart"
+    }
+
+    // Use this loop to iterate over objects in JavaScript
+    for(key in employee){
+        console.log(`The ${key} of employee is ${employee[key]}`);
+    }
+
+    </script>
+    
+</body>
+</html>

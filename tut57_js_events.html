@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+    <style>
+        #btn{
+            border:2px solid rgb(10, 6, 6);
+            color: white;
+            background-color: red;
+            cursor: pointer;
+            padding:10px 12px;
+            border-radius: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>this is just a heading</h1>
+        <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci eos perspiciatis pariatur sapiente enim incidunt magni dolorem ex, nulla placeat, maxime numquam obcaecati minima atque asperiores perferendis ea voluptate saepe facere iusto? At dolores error saepe magni ab voluptatibus sequi dolorum, cum, omnis incidunt aperiam commodi fugit eum vero tempora quis asperiores adipisci nemo consectetur accusamus nisi dicta doloremque iusto! Illum ratione aut asperiores soluta laudantium accusantium fuga, quasi cupiditate nobis unde quas doloremque qui dolores magni delectus dolorem, culpa veniam laborum repellat ex? Vero nemo eaque itaque minus tenetur voluptates quis magnam dolores recusandae quod explicabo ab labore, corrupti et animi sit illum incidunt, vitae unde natus maiores, aspernatur ex pariatur. Minima, similique? Deleniti dolores facere a. Maxime ex eum placeat saepe dolorum at ea sed sequi in fugit, minima quibusdam cupiditate est unde sit tenetur aperiam officia optio explicabo quasi officiis, earum sunt ipsum doloremque! Adipisci aliquid quaerat nobis vero asperiores totam. Esse, quaerat? Hic a ducimus voluptatem! Veritatis molestias expedita laudantium iste voluptatum. Culpa quod non illum, consectetur ab aliquid placeat distinctio facilis omnis ex quae labore! Repellat ipsa dicta maxime recusandae quas assumenda. Corporis eligendi ipsam id explicabo delectus temporibus amet nihil, sunt culpa eveniet facilis consectetur consequuntur officiis repellendus est fugiat ipsa deserunt et quas voluptate ab sequi tempora vero? Sapiente, animi! Sit tempore velit adipisci iure laborum sint eum, quam magni animi soluta nam deleniti officiis omnis odit incidunt ut minus, temporibus facilis repudiandae, labore dolor? Explicabo, quam nesciunt?</p>
+    </div>
+    <button id="btn" onclick="hide()">hide/sh0w</button>
+    <script>
+        function hide(){
+
+            let btn =document.getElementById("btn")
+            let para =document.getElementById("para")
+            if(para.style.display!= 'none'){
+                para.style.display='none';
+            }
+            else{
+                para.style.display='block'
+            }
+        }
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            alert('Mouse Inside')
+        });
+
+    </script>
+    
+</body>
+</html>

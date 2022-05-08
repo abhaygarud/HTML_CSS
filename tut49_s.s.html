@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript docmunet "string "</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Lorem ipsum dolor sit.
+        </h1>
+        <div id="content"></div>
+        <p>Lorem ipsumṁ dolor sit amet consectetur adipisicing elit. Error rem omnis recusandae ut consequuntur voluptates, beatae dolorem fugit inventore fuga perspiciatis aspernatur animi quidem excepturi facere, voluptate nostrum. Eos corrupti assumenda quidem nihil molestias.</p>
+    </div>
+    <script>
+        var name ='abhay';
+        var surname ='garud'
+        var caste ='hindu maratha';
+        var temp=`${(name +  surname) }is my name and my caste is ${caste} `;
+        console.log(temp);
+        // to find the lenght of the word
+        var len=caste.length
+        console.log(`"length of the var caste is :"${len}`)
+        // this helps to add the valu in the html through js dynamically
+        document.getElementById('content').innerHTML='<h2>this is abay here<h2>'
+    </script>
+
+    
+</body>
+</html>
